@@ -1,0 +1,35 @@
+.section-work {
+  padding: 94px 0;
+  
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
+    display: none;
+  }
+  
+}
+.work__item {
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.work__block {
+  position: relative;
+}
+
+.work__text {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  padding: 25px 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--pure-white-color);
+
+  background: rgba(47, 48, 58, 0.8);
+}

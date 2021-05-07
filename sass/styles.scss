@@ -1,0 +1,30 @@
+// First, we include outside code
+// @import "./vendors/.."
+
+// Second, we include additional utils
+@import "./utils/variables";
+
+//Third, we include base styles
+@import "./base/common";
+@import "./base/fonts";
+@import "./base/container";
+
+//Fourth, we include components (small pieces that can be included in blocks)
+@import "./components/button";
+@import "./components/socials-list";
+@import "./components/title";
+@import "./components/modal";
+@import "./components/form";
+@import "./components/mobile-menu";
+
+//Fifth, we include all the sections and layouts
+@import "./layouts/grid";
+@import "./layouts/header";
+@import "./layouts/navigation";
+@import "./layouts/hero";
+@import "./layouts/advantages";
+@import "./layouts/work";
+@import "./layouts/team";
+@import "./layouts/customers";
+@import "./layouts/portfolio";
+@import "./layouts/footer";
