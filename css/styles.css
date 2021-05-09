@@ -1042,6 +1042,12 @@ textarea:focus {
   background-position: center;
 }
 
+@media screen and (max-width: 1198.98px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background: linear-gradient(180deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero/desktop/hero-2x-desktop.png);
@@ -1106,7 +1112,6 @@ textarea:focus {
 }
 
 .hero__container {
-  padding: 200px 0;
   text-align: center;
 }
 

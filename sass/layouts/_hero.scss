@@ -14,7 +14,9 @@
   background-size: cover;
   background-position: center;
 
-
+  @media screen and (max-width: 1198.98px) {
+    padding: 200px 0;
+  }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -110,7 +112,7 @@
 }
 
 .hero__container {
-  padding: 200px 0;
+  // padding: 200px 0;
   text-align: center;
 }
 
@@ -154,5 +156,4 @@
     font-size: 26px;
     line-height: 1.62;
   }
-
 }
