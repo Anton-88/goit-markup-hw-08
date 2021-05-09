@@ -732,8 +732,9 @@ textarea:focus {
 }
 
 .mobile-btn {
-  top: 20px;
-  right: 20px;
+  position: fixed;
+  top: 10px;
+  right: 25px;
   z-index: 100;
   background-color: transparent;
   border: none;
@@ -1142,9 +1143,11 @@ textarea:focus {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1198.98px) {
+@media screen and (max-width: 1200px) {
   .hero__text {
     max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
   }
 }
 
@@ -1233,7 +1236,7 @@ textarea:focus {
   padding: 94px 0;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .section-work {
     display: none;
   }

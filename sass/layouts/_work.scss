@@ -1,7 +1,11 @@
 .section-work {
   padding: 94px 0;
   
-  @media screen and (min-width: 480px) and (max-width: 1200px) {
+  // @media screen and (min-width: 480px) and (max-width: 1200px) {
+  //   display: none;
+  // }
+
+  @media screen and (max-width: 1200px) {
     display: none;
   }
   
