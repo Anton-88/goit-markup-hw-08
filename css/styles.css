@@ -346,7 +346,7 @@ address {
 }
 
 .form__input {
-  max-width: 100%;
+  min-width: 100%;
   height: 40px;
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -380,7 +380,7 @@ address {
 }
 
 textarea {
-  max-width: 100%;
+  min-width: 100%;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -584,6 +584,9 @@ textarea:focus {
 
 .mobile-socials__link {
   padding: 10px;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--accent-color);
 }
 
 .mobile-overlay.is-hidden {
@@ -1114,17 +1117,7 @@ textarea:focus {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .portfolio-buttons-list__item:nth-child(-n + 3) {
-    margin-bottom: 15px;
-  }
-}
-
-.portfolio-buttons-list__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1200px) {
   .portfolio-examples-list {
     justify-content: center;
   }
@@ -1135,8 +1128,32 @@ textarea:focus {
 }
 
 .portfolio-buttons-list {
-  margin: 0 auto;
-  margin-bottom: 50px;
+  display: flex;
+  margin: 0 auto 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio-buttons-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-buttons-list {
+    display: inline-block;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-buttons-list__item:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+}
+
+.portfolio-buttons-list__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .portfolio__container {
@@ -1306,7 +1323,7 @@ textarea:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--pure-white-color);
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1200px) {
@@ -1363,6 +1380,7 @@ textarea:focus {
 .footer__mail {
   padding: 15px;
   margin-right: 10px;
+  min-width: 300px;
   max-width: 360px;
   height: 50px;
   background-color: var(--footer-bg-color);

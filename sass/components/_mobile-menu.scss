@@ -3,7 +3,6 @@
   top: 20px;
   right: 20px;
   z-index: 100;
-  
 
   background-color: transparent;
   border: none;
@@ -145,6 +144,11 @@
 
 .mobile-socials__link {
   padding: 10px;
+
+  font-size: 18px;
+  line-height: 22px;
+
+  color: var(--accent-color);
 }
 
 .mobile-overlay.is-hidden {
