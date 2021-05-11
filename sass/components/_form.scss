@@ -1,3 +1,10 @@
+.form {
+  @media screen and (min-width: 468px) {
+    width: 450px;
+    height: 600px;
+  }
+}
+
 .form__field {
   position: relative;
   margin-bottom: 10px;
@@ -74,14 +81,26 @@ textarea {
   }
 }
 
-.form__agreement {
+// .form__agreement {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 20px auto 0;
+// }
+
+.form__checkbox {
+  // display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto 0;
+  // margin: 20px auto 0;
+  
+  margin-top: 20px;
 }
 
 .form__agreement-text {
+  
+  // display: inline-block;
   margin-left: 7px;
 
   font-weight: 400;

@@ -469,7 +469,12 @@ address {
 
 .socials-list {
   display: inline-flex;
-  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .socials-list {
+    justify-content: center;
+  }
 }
 
 .socials-list__item:not(:last-child) {
@@ -530,6 +535,7 @@ address {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 55;
   background-color: var(--modal-bg-color);
   opacity: 1;
   transition: opacity 300ms var(--transition-function), background-color 300ms var(--transition-function);
@@ -592,6 +598,13 @@ address {
   letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 468px) {
+  .form {
+    width: 450px;
+    height: 600px;
+  }
 }
 
 .form__field {
@@ -670,11 +683,11 @@ textarea:focus {
   border-color: var(--accent-color);
 }
 
-.form__agreement {
+.form__checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto 0;
+  margin-top: 20px;
 }
 
 .form__agreement-text {
@@ -732,10 +745,7 @@ textarea:focus {
 }
 
 .mobile-btn {
-  position: fixed;
-  top: 10px;
-  right: 25px;
-  z-index: 100;
+  margin: 0;
   background-color: transparent;
   border: none;
   width: 40px;
@@ -853,6 +863,7 @@ textarea:focus {
   font-size: 18px;
   line-height: 22px;
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .mobile-overlay.is-hidden {
@@ -1042,12 +1053,6 @@ textarea:focus {
   background-position: center;
 }
 
-@media screen and (max-width: 1198.98px) {
-  .hero {
-    padding: 200px 0;
-  }
-}
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background: linear-gradient(180deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/hero/desktop/hero-2x-desktop.png);
@@ -1112,6 +1117,7 @@ textarea:focus {
 }
 
 .hero__container {
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -1390,12 +1396,6 @@ textarea:focus {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1200px) {
-  .portfolio-examples-list {
-    justify-content: center;
-  }
-}
-
 .portfolio-examples-list__description {
   padding: 20px 25px;
 }
@@ -1601,7 +1601,8 @@ textarea:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--pure-white-color);
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1200px) {
